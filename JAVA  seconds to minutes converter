@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+System.out.print("Enter the total number of seconds: ");
+        int totalSeconds = scanner.nextInt();
+      int minutes = totalSeconds / 60;
+
+        
+        int remainingSeconds = totalSeconds % 60;
+
+      System.out.println(totalSeconds + " seconds is equal to " + minutes + " minute(s) and " + remainingSeconds + " second(s).");
+      scanner.close();
+    }
+}
